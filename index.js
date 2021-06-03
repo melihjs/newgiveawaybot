@@ -7,7 +7,7 @@ client.commands = new discord.Collection();
 client.logger = console;
 
 client.on('ready', () => {
-  client.logger.log('bot bağlandı.');
+  client.logger.log('bot is ready.');
   client.user.setStatus("idle");
   if (!Array.isArray(client.db.get("gws"))) {
     client.db.set("gws", []);
